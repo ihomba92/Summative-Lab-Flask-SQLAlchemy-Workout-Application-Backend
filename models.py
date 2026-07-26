@@ -1,7 +1,6 @@
-from app import db
+from extensions import db
 from sqlalchemy.orm import validates
 from sqlalchemy import CheckConstraint, UniqueConstraint
-
 class Exercise(db.Model):
     __tablename__ = 'exercises'
 
